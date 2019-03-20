@@ -109,8 +109,13 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   max-width: 1100px;
-  background-color: grey;
   border: 1px solid black;
+}
+@media (max-width: 500px) {
+  body {
+    width: 80%;
+    background: green;
+  }
 }
 ol,
 ul {
@@ -144,6 +149,12 @@ img {
   height: auto;
   display: flex;
   justify-content: flex-start;
+}
+@media (max-width: 500px) {
+  img {
+    justify-content: center;
+    width: 100%;
+  }
 }
 h1 {
   display: flex;

@@ -29,13 +29,21 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+@Mobile:500px;
+	
+	
 body {
 	line-height: 1;
 	margin-left:5%;
 	margin-right:5%;
 	max-width:1100px;
-	background-color:grey;
+//	background-color:grey;
 	border: 1px solid black;
+	@media (max-width: 500px) {
+    width: 80%;
+    background: green;
+  }
 }
 ol, ul {
 	list-style: none;
@@ -64,13 +72,23 @@ html, body {
 	
 }
 @mainColor: #5B6DCD;
+
 @buttonColor: #f2f2f2;
+
 @fontWritten: "Comic Sans MS";
+
+
 img {
   width: 45%;
   height: auto;
 	display:flex;
-	justify-content:flex-start;
+	justify-content:flex-start; 
+	
+	@media (max-width: 500px){
+		justify-content: center;
+		width:100%
+	}
+	
 	
 }
 
